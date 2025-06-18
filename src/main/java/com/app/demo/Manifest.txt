@@ -1,0 +1,2 @@
+Main-Class: src.main.java.com.app.demo.Demo
+Class-Path: ../../resources/lib/cmu_us_kal.jar
