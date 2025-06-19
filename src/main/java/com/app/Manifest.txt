@@ -1,0 +1,2 @@
+Main-Class: src.main.java.com.app.TextToSpeechified
+Class-Path: src/main/java/com/resources/lib/cmu_us_kal.jar

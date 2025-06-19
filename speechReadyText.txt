@@ -1,0 +1,4 @@
+textToSpeechified version 0.1
+This is a demo to ensure that the speech portion of this project works as expected. 
+If you can hear me, you're in good shape!
+You should not need to recompile this jar file to speechify the contents of this speech ready text file.
