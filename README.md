@@ -1,15 +1,18 @@
-#### Compilation Instructions
+#### (Demo) Compilation Instructions
 
-1. find -type f -name *java > sources.txt
-2. 
-	a. javac -sourcepath ./src/ -d ./bin/ ./src/main/java/com/app/*.java
-	b. javac -sourcepath ./src/ -d ./bin/ @sources.txt
-3. jar -c --file demo.jar --manifest Manifest.txt -C ./bin/ .
-4. make sure manifest file looks like (with whitespace at end):
+1. find -type f -name *java > ./src/main/java/com/app/demo/sources.txt
+2. javac -sourcepath ./src/ -d ./bin/ @./src/main/java/com/app/demo/sources.txt
+3. make sure manifest file looks like (with whitespace at end):
 
 ```
-Main-Class: src.main.java.com.app.Demo
-Class-Path: 
+Main-Class: Demo
+Class-Path: ../../resources/lib/cmu_us_kal.jar
 
 ```
-4. java -jar demo.jar
+4. jar -c --file ./src/main/java/com/app/demo/demo.jar --manifest ./src/main/java/com/app/demo/Manifest.txt -C ./bin/ .
+5. java -jar ./src/main/java/com/app/demo/demo.jar
+
+##### Libraries
+
+- [FreeTTS](https://freetts.sourceforge.io/)
+- [javax-speech](https://github.com/umjammer/javax-speech)
