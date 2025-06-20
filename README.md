@@ -30,3 +30,5 @@ Class-Path: src/main/java/com/resources/lib/cmu_us_kal.jar
 
 - [FreeTTS](https://freetts.sourceforge.io/)
 - [javax-speech](https://github.com/umjammer/javax-speech)
+- [Apache Commons Text](https://github.com/apache/commons-text/tree/master)
+- [Apache Commons Lang](https://github.com/apache/commons-lang/tree/master)

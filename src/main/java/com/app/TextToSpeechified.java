@@ -7,10 +7,13 @@ import javax.speech.Central;
 import javax.speech.synthesis.Synthesizer;
 import javax.speech.synthesis.SynthesizerModeDesc;
 
+import src.main.java.com.app.TextToSpeechify;
+
 public class TextToSpeechified {
-	
-	private Synthesizer synthesizer;	
-	String inputFile = "speechReadyText.txt";
+		
+	private Synthesizer synthesizer;
+	TextToSpeechify tts_helper;
+	String speechReadyTextFile = "speechReadyText.txt";	
 	
 	public TextToSpeechified() throws Exception {
 		
@@ -48,22 +51,32 @@ public class TextToSpeechified {
 		} catch( Exception e ) {
 			e.printStackTrace();
 		}
-		
+
 	}
 	
 	public void speak() throws Exception {
+		
 		try {
 			// Speaks the given text
 	        // until the queue is empty.
-			BufferedReader br = new BufferedReader( new FileReader( inputFile ) );
+			BufferedReader br = new BufferedReader( new FileReader( speechReadyTextFile ) );
 			String line;
 			while( ( line = br.readLine() ) != null ) {
-				synthesizer.speakPlainText(line, null);
+				synthesizer.speakPlainText( line, null );
 			}
-	        synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY);
+	        synthesizer.waitEngineState( Synthesizer.QUEUE_EMPTY );
+	        br.close();
 		} catch( Exception e ) {
 			e.printStackTrace();
-		}
+		}		
+		
+	}
+	
+	public void speechifyText() {
+
+		tts_helper = new TextToSpeechify();
+		tts_helper.getWebResourcesFromURLFeed();
+
 	}
 	
 	public static void main(String[] args) throws Exception {
@@ -75,9 +88,8 @@ public class TextToSpeechified {
 //				System.exit(0);
 //			}
 			TextToSpeechified tts_client = new TextToSpeechified();
-//			String inputFile = args[0];
-//			tts_client.speak( inputFile );
-			tts_client.speak( );
+			tts_client.speechifyText();
+			tts_client.speak();
 			tts_client.deallocate();
 			
 		} catch( Exception e ) {
