@@ -119,7 +119,7 @@ public class FeatureSetImpl implements FeatureSet {
      * @param value the value of the feature
      */
     public void setInt(String name, int value) {
-	setObject(name, new Integer(value));
+	setObject(name, Integer.valueOf(value));
     }
 
     /**
@@ -129,7 +129,7 @@ public class FeatureSetImpl implements FeatureSet {
      * @param value the value of the feature
      */
     public void setFloat(String name, float value) {
-	setObject(name, new Float(value));
+	setObject(name, Float.valueOf(value));
     }
 
     /**

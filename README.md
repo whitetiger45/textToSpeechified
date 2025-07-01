@@ -29,6 +29,9 @@ Class-Path: src/main/java/com/resources/lib/cmu_us_kal.jar
 ##### Libraries
 
 - [FreeTTS](https://freetts.sourceforge.io/)
+- [FestVox To FreeTTS](https://freetts.sourceforge.io/tools/FestVoxToFreeTTS/README.html)
 - [javax-speech](https://github.com/umjammer/javax-speech)
 - [Apache Commons Text](https://github.com/apache/commons-text/tree/master)
 - [Apache Commons Lang](https://github.com/apache/commons-lang/tree/master)
+- [Pdf2Dom](https://github.com/radkovo/Pdf2Dom)
+- [JUnit](https://github.com/junit-team/junit-framework/tree/main)

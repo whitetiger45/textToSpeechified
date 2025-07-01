@@ -308,6 +308,7 @@ public abstract class Voice implements UtteranceProcessor, Dumpable {
     /**
      * @deprecated  As of FreeTTS 1.2, replaced by {@link #allocate}.
      */
+    @Deprecated
     public void load() {
         allocate();
     }

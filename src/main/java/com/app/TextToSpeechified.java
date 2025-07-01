@@ -23,6 +23,17 @@ public class TextToSpeechified {
 	            "freetts.voices",
 	            "com.sun.speech.freetts.en.us"
 	                + ".cmu_us_kal.KevinVoiceDirectory");
+			
+			/* AlanVoiceDirectory seems to be buggy so we don't use it!
+			 * repeated errors of:
+			 * 		ClusterUnitDatabase: can't find tree for pau_ax
+			 * 		ClusterUnitDatabase Error: getUnitIndex: can't find unit type pau_ax
+			 */
+			// Set property as Alan Dictionary
+//	        System.setProperty(
+//	            "freetts.voices",
+//	            "com.sun.speech.freetts.en.us"
+//	                + ".cmu_time_awb.AlanVoiceDirectory");
 	
 	        // Register Engine
 	        Central.registerEngineCentral(

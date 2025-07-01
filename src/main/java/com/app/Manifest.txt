@@ -1,2 +1,2 @@
 Main-Class: src.main.java.com.app.TextToSpeechified
-Class-Path: src/main/java/com/resources/lib/cmu_us_kal.jar
+Class-Path: src/main/java/com/resources/lib/cmudict04.jar src/main/java/com/resources/lib/cmulex.jar src/main/java/com/resources/lib/cmu_us_kal.jar src/main/java/com/resources/lib/cmu_time_awb.jar src/main/java/com/resources/lib/cmutimelex.jar src/main/java/com/resources/lib/en_us.jar src/main/java/com/resources/lib/freetts.jar src/main/java/com/resources/lib/freetts-jsapi10.jar src/main/java/com/resources/lib/PDFToHTML.jar
